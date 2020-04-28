@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:orientation="vertical"
+    android:background="#3498db">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메뉴"
+            android:textSize="28sp"
+            android:textColor="#ffffff"
+            android:background="#1abc9c"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_menu_create"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="악보 제작"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn_menu_box"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="악보 보관함"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn_menu_met"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="메트로놈"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#e74c3c"
+            android:text="닫기"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
